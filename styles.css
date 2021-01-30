@@ -1,0 +1,135 @@
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-header-graphics {
+    height: 300px;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1574607408385-dc664a9c5272?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80") ;
+    background-size: cover;
+}
+
+.top-header-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(26, 26, 26, 0.479);
+    margin-bottom: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-icons {
+    position: absolute;
+    color: white;
+    font-size: 2.188rem;
+}
+
+.title {
+    /* border: solid 3px rgb(255, 0, 119) ; */
+    background-color: rgba(26, 26, 26, 0.479);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.text {    
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.563rem;
+}
+
+h2 {
+    color: rgb(39, 39, 39);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.main {
+    border: solid rgb(189, 189, 189) 2px;
+    margin: 20px 5px 5px 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.window {
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+    margin:10px;
+}
+
+.top-bar {
+}
+
+.title-window {
+    padding-bottom: 10px;
+}
+
+.submit-button {
+    color:   rgb(39, 39, 39);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: white;
+    border: solid 2px   rgb(39, 39, 39);
+}
+
+.submit-button:hover {
+    color:  rgb(255, 255, 255);
+    background-color:  rgb(39, 39, 39);
+}
+
+.line {
+    border-top: solid grey 2px;
+    margin-top: 10px;
+}
+
+.data {
+    color:   rgb(39, 39, 39);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0px 200px 0;
+    line-height: 30px;          
+}
+
+.sum {
+    color:  rgb(39, 39, 39);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0px 20px 0;
+    line-height: 30px;          
+}
+
+
+@media screen and (max-width: 959px) {
+    .top-header-graphics {
+        height: 200px;
+        width: 100%;
+        background-image: url("https://images.unsplash.com/photo-1574607408385-dc664a9c5272?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80") ;
+        background-size: cover;
+    }
+
+    .main {          
+    }
+    
+    .main {
+    border: solid rgb(246, 160, 246) 2px;
+    margin: 20px 5px 5px 5px;
+    padding: 10px;
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    }
+}
