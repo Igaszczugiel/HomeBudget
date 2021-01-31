@@ -6,7 +6,7 @@
 .top-header-graphics {
     height: 300px;
     width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1574607408385-dc664a9c5272?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80") ;
+    background-image: url("https://images.unsplash.com/photo-1607166602071-847b7d110781?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") ;
     background-size: cover;
 }
 
@@ -22,7 +22,7 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: rgba(26, 26, 26, 0.479);
+    background-color: white;
     margin-bottom: 10%;
 
     display: flex;
@@ -31,23 +31,19 @@
 }
 .material-icons {
     position: absolute;
-    color: white;
+    color: rgba(255, 78, 146, 0.801);
     font-size: 2.188rem;
 }
 
 .title {
     /* border: solid 3px rgb(255, 0, 119) ; */
-    background-color: rgba(26, 26, 26, 0.479);
+    background-color:white;
     padding: 15px;
     text-align: center;
-    border-radius: 5px;
-}
-
-.text {    
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(41, 41, 41);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.563rem;
@@ -62,16 +58,24 @@ h2 {
 
 .main {
     border: solid rgb(189, 189, 189) 2px;
-    margin: 20px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .window {
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
     padding: 30px;
     margin:10px;
+}
+
+.incomes {
+    background-color: rgb(219, 242, 255);
+}
+
+.outcomes {
+    background-color: rgb(236, 236, 236);
 }
 
 .top-bar {
@@ -81,21 +85,48 @@ h2 {
     padding-bottom: 10px;
 }
 
-.submit-button {
+.submit-button-incomes {
+    color:   rgb(14, 54, 116);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: white;
+    border: solid 2px   rgb(14, 54, 116);;
+    margin: 10px 10px 10px 0;
+}
+
+.submit-button-incomes:hover {
+    color:  rgb(255, 255, 255);
+    background-color:  rgb(71, 125, 207);
+    cursor: pointer;
+}
+
+.submit-button-outcomes {
     color:   rgb(39, 39, 39);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     background-color: white;
     border: solid 2px   rgb(39, 39, 39);
+    margin: 10px 10px 10px 0;
 }
 
-.submit-button:hover {
+.submit-button-outcomes:hover {
     color:  rgb(255, 255, 255);
     background-color:  rgb(39, 39, 39);
+    cursor: pointer;
 }
 
-.line {
+/* .line {
     border-top: solid grey 2px;
+    margin-top: 10px;
+} */
+
+.l-outcomes {
+    border-top: solid grey 2px;
+    margin-top: 10px;
+}
+
+.l-incomes {
+    border-top: solid rgb(97, 142, 168) 2px;
     margin-top: 10px;
 }
 
@@ -118,16 +149,13 @@ h2 {
     .top-header-graphics {
         height: 200px;
         width: 100%;
-        background-image: url("https://images.unsplash.com/photo-1574607408385-dc664a9c5272?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80") ;
+        background-image: url("https://images.unsplash.com/photo-1607166602071-847b7d110781?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") ;
         background-size: cover;
-    }
-
-    .main {          
     }
     
     .main {
-    border: solid rgb(246, 160, 246) 2px;
-    margin: 20px 5px 5px 5px;
+    border: solid rgb(189, 189, 189) 2px;
+    margin: 5px 5px 5px 5px;
     padding: 10px;
     display: block;
     grid-template-columns: 1fr 1fr;
