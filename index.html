@@ -23,71 +23,73 @@
                 </span>
             </div>
             <div class="title">
-<!-- JS SHOW / 01 suma przychodow minus suma wydatkow, id="Fund" -->
-                <h1 class="text"> You still have <span id="Fund"></span> PLN to spend this month </h1>
+                    <!-- JS SHOW / 01 suma przychodow minus suma wydatkow, id="Fund" -->
+                <span id="fund" class="text">HERE WILL BE YOUR ACCOUNT STATEMENT</span>
             </div>
         </div>
     </div>
     <div class="main">
-        <div class="window incomes">
+        <div id="incomes" class="window incomes">
             <div class="top-bar">
                 <h2 class="title-window">Incomes</h2>
-                <form>
-<!-- JS INPUT / 06 nazwa przychodu id="IncomeName" -->
-                    <input class="main-input income-outcome-name" id="IncomeName" type="text" placeholder="Income description">
-<!-- JS INPUT / 04 przychod id="IncomeAmount" -->
-                    <input class="main-input income-outcome-amount" id="IncomeAmount" type="number" placeholder="Amount, in PLN">
-<!-- JS INPUT / 08 eventListener on click? Ten button dodaje elementy id="IncomeName" oraz id="IncomeAmount"
-do drzewa DOM ponizej / id="addIncomeNameAndAmount"  -->
+                <form id="incomesForm">
+                        <!-- JS INPUT / 06 nazwa przychodu id="IncomeName" -->
+                    <input class="main-input income-outcome-name" id="incomeName" type="text" placeholder="Income description">
+                        <!-- JS INPUT / 04 przychod id="IncomeAmount" -->
+                    <input class="main-input income-outcome-amount" id="incomeAmount" type="number" placeholder="Amount, in PLN">
+                        <!-- JS INPUT / 08 eventListener on click? Ten button dodaje elementy id="IncomeName" oraz id="IncomeAmount"
+                        do drzewa DOM ponizej / id="addIncomeNameAndAmount"  -->
                     <input class="submit-button-incomes" id="addIncomeNameAndAmount" type="submit" value="ADD INCOME">
                 </form>
                 <div class="line l-incomes"></div>
             </div>
-<!-- ten caly div powinien byc wprowadzony w javascript - jest to lista z inputow -->
+                <!-- ten caly div powinien byc wprowadzony w javascript - jest to lista z inputow -->
             <div class="data data-incomes">
-                <h3>Wyplata - 15000 PLN</h3>
-                <h3>Additional - 500 PLN</h3>
-                <h3>Fuszki - 2000 PLN</h3>
+                <ul id="incomesList">
+                </ul>
             </div>
             <div class="sum sum-incomes">
                 <div class="line l-incomes"></div>
-<!-- JS SHOW / 02 suma przychodow id="IncomeSum" -->
+                    <!-- JS SHOW / 02 suma przychodow id="IncomeSum" -->
                 <h2>Incomes sum is <span id="IncomeSum"> </span> PLN</h2>
             </div>
-
         </div>
 
 
-        <div class="window outcomes">
+        <div id="outcomes" class="window outcomes">
             <div class="top-bar">
                 <h2 class="title-window">Outcomes</h2>
-                <form>
-<!-- JS INPUT / 07 nazwa przychodu id="OutcomeName" -->
-                    <input class="main-input income-outcome-name" id="OutcomeName" type="text" placeholder="Outcome description">
-<!-- JS INPUT / 05 przychod id="OutcomeAmount" -->
-                    <input class="main-input income-outcome-amount" id="OutcomeAmount" type="number" placeholder="Amount, in PLN">
-<!-- JS BUTTON / 09 eventListener on click? Ten button dodaje elementy id="OutcomeName" oraz id="OutcomeAmount" 
-do drzewa DOM ponizej / id="addOutcomeNameAndAmount"  -->
+                <form id="outcomesForm">
+                        <!-- JS INPUT / 07 nazwa przychodu id="outcomeName" -->
+                    <input class="main-input income-outcome-name" id="outcomeName" type="text" placeholder="Outcome description">
+                        <!-- JS INPUT / 05 przychod id="OutcomeAmount" -->
+                    <input class="main-input income-outcome-amount" id="outcomeAmount" type="number" placeholder="Amount, in PLN">
+                        <!-- JS BUTTON / 09 eventListener on click? Ten button dodaje elementy id="outcomeName" oraz id="OutcomeAmount" 
+                        do drzewa DOM ponizej / id="addOutcomeNameAndAmount"  -->
                     <input class="submit-button-outcomes" id="addOutcomeNameAndAmount" type="submit" value="ADD OUTCOME">
                 </form>
                 <div class="line l-outcomes"></div>
             </div>
-<!-- ten caly div powinien byc wprowadzony w javascript - jest to lista z inputow -->
+                    <!-- ten caly div powinien byc wprowadzony w javascript - jest to lista z inputow -->
             <div class="data data-outcomes">
-                <h3>Zakupy w biedrze - 60 PLN</h3>
-                <h3>Wynajem mieszkania - 670 PLN</h3>
-                <h3>Sukienka - 540 PLN</h3>
+                <ul id="outcomesList">
+                </ul>
             </div>
             <div class="sum sum-outcomes">
                 <div class="line l-outcomes"></div>
-<!-- JS SHOW / 03 suma kosztow id="OutcomeSum" -->
-                <h2>Outcomes sum is <span id="OutcomeSum"> </span> PLN</h2>
+                    <!-- JS SHOW / 03 suma kosztow id="OutcomeSum" -->
+                <h2>Outcomes sum is <span id="outcomeSum"> </span> PLN</h2>
+
             </div>
     
         </div>
 
     </div>
-
-    <script src="index.js"></script>   
+ <!-- usun te wszystkie    -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- usun defer -->
+    <script src="index.js" defer></script>   
 </body>
 </html>
