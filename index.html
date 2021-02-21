@@ -12,84 +12,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
-    <div class="top-header">
-        <div class="top-header-graphics" alt="money"></div>
-        <div class="top-header-content">
-            <div class="logo">
-                <span class="material-icons">
-                    auto_graph
-                </span>
-            </div>
-            <div class="title">
-                    <!-- JS SHOW / 01 suma przychodow minus suma wydatkow, id="Fund" -->
-                <span id="fund" class="text">HERE WILL BE YOUR ACCOUNT STATEMENT</span>
-            </div>
+    <div class="top-header-content">
+        <div class="logo">
+            <span class="material-icons">
+                auto_graph
+            </span>
+            <h1 class="title">Home Budget</h1>
         </div>
     </div>
-    <div class="main">
-        <div id="incomes" class="window incomes">
-            <div class="top-bar">
-                <h2 class="title-window">Incomes</h2>
-                <form id="incomesForm">
-                        <!-- JS INPUT / 06 nazwa przychodu id="IncomeName" -->
-                    <input class="main-input income-outcome-name" id="incomeName" type="text" placeholder="Income description">
-                        <!-- JS INPUT / 04 przychod id="IncomeAmount" -->
-                    <input class="main-input income-outcome-amount" id="incomeAmount" type="number" placeholder="Amount, in PLN">
-                        <!-- JS INPUT / 08 eventListener on click? Ten button dodaje elementy id="IncomeName" oraz id="IncomeAmount"
-                        do drzewa DOM ponizej / id="addIncomeNameAndAmount"  -->
-                    <input class="submit-button-incomes" id="addIncomeNameAndAmount" type="submit" value="ADD INCOME">
-                </form>
-                <div class="line l-incomes"></div>
-            </div>
-                <!-- ten caly div powinien byc wprowadzony w javascript - jest to lista z inputow -->
-            <div class="data data-incomes">
-                <ul id="incomesList">
-                </ul>
-            </div>
-            <div class="sum sum-incomes">
-                <div class="line l-incomes"></div>
-                    <!-- JS SHOW / 02 suma przychodow id="IncomeSum" -->
-                <h2>Incomes sum is <span id="IncomeSum"> </span> PLN</h2>
-            </div>
-        </div>
-
-
-        <div id="outcomes" class="window outcomes">
-            <div class="top-bar">
-                <h2 class="title-window">Outcomes</h2>
-                <form id="outcomesForm">
-                        <!-- JS INPUT / 07 nazwa przychodu id="outcomeName" -->
-                    <input class="main-input income-outcome-name" id="outcomeName" type="text" placeholder="Outcome description">
-                        <!-- JS INPUT / 05 przychod id="OutcomeAmount" -->
-                    <input class="main-input income-outcome-amount" id="outcomeAmount" type="number" placeholder="Amount, in PLN">
-                        <!-- JS BUTTON / 09 eventListener on click? Ten button dodaje elementy id="outcomeName" oraz id="OutcomeAmount" 
-                        do drzewa DOM ponizej / id="addOutcomeNameAndAmount"  -->
-                    <input class="submit-button-outcomes" id="addOutcomeNameAndAmount" type="submit" value="ADD OUTCOME">
-                </form>
-                <div class="line l-outcomes"></div>
-            </div>
-                    <!-- ten caly div powinien byc wprowadzony w javascript - jest to lista z inputow -->
-            <div class="data data-outcomes">
-                <ul id="outcomesList">
-                </ul>
-            </div>
-            <div class="sum sum-outcomes">
-                <div class="line l-outcomes"></div>
-                    <!-- JS SHOW / 03 suma kosztow id="OutcomeSum" -->
-                <h2>Outcomes sum is <span id="outcomeSum"> </span> PLN</h2>
-
-            </div>
     
-        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="dochody" class="header">
+              <h2>Incomes</h2>
+              <input type="text" id="newName" placeholder="Add incomes">
+              <input type="number" id="newAmount" placeholder="Amount">
+              <span id="addIncoming" class="addBtn">Add</span>
+            </div>
+              <ul id="incomingsList"></ul>
+    
+            <div id="incomingsSum" class="suma"></div>
+            </div>
 
-    </div>
- <!-- usun te wszystkie    -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<!-- usun defer -->
-    <script src="index.js" defer></script>   
-</body>
+          <div class="col">
+            <div id="wydatki" class="header1">
+              <h2>Outcomes</h2>
+              <input type="text" id="mojewydatki" placeholder="Add outcomes"><input type="text" id="myExpenses" placeholder="Kwota">
+              <span onclick="newExpenseList()" class="addBtn">Add</span>
+            </div>
+
+              <ul id="listaWydatkow"></ul>
+              <div class="suma1">Outcomes summary</div>
+    
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <script src="index.js"></script>
+  </body>
 </html>
