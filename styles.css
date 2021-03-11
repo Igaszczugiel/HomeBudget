@@ -1,5 +1,5 @@
 body{
-  background-image: url(https://i.postimg.cc/DwchWzdf/site-background.png);
+  background-image: url(https://images.unsplash.com/photo-1515339760107-1952b7a08454?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
   background-position: center;
   background-size: 100%;
 }
@@ -140,8 +140,8 @@ input {
 .logo {
   font-size: 2.5rem;
   text-align: center;
-  background: orange;
-  max-width: 150px;
+  background: rgba(255, 255, 255, 0.24);
+  max-width: 300px;
   margin: auto;
 }
 
