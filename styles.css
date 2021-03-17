@@ -120,10 +120,7 @@ h2 {
         width: 100%;
         background-image: url("https://images.unsplash.com/photo-1574607408385-dc664a9c5272?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80") ;
         background-size: cover;
-    }
-
-    .main {          
-    }
+}
 
     .main {
     border: solid rgb(246, 160, 246) 2px;
